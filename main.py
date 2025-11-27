@@ -4,6 +4,8 @@ for i in lst1:
     lst2.append(i)
 lst2.sort()
 print(lst2)
+print('hello git')
+
 
 
 
