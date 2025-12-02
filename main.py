@@ -6,7 +6,12 @@ lst2.sort()
 print(lst2)
 print('hello git')
 
+
 print('hello world')
+
+def plus(x,y):
+    return x+y
+
 
 def plus(x,y):
     return x+y
