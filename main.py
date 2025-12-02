@@ -5,7 +5,12 @@ for i in lst1:
 lst2.sort()
 print(lst2)
 print('hello git')
+
 print('hello world')
+
+def plus(x,y):
+    return x+y
+
 
 
 
