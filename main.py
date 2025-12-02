@@ -6,8 +6,9 @@ lst2.sort()
 print(lst2)
 print('hello git')
 print('hello world')
-
-
+print('hello, pyton')
+print('hello, pyton')
+print('hello, pyton')
 
 
 
