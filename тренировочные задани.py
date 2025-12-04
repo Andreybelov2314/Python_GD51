@@ -12,4 +12,22 @@ print('-======-')
 
 
 print('-======-')
+def alg(x,sign,y):
+    if sign=='+':
+        res=int(x)+int(y)
+        return res
+    elif sign=='/':
+        res=int(x)/int(y)
+        return res
+    elif sign=='*':
+        res=int(x)*int(y)
+        return res
+    elif sign=='-':
+        res=int(x)-int(y)
+        return res
+x=input("введите первое число ")
+sign=input("введите знак ")
+y=input("введите второе число")
+print(alg(x, sign, y))
+
 
