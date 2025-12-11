@@ -12,6 +12,7 @@ print('-======-')
 
 
 print('-======-')
+
 def arif(x):
     lst=[]
     signs='+-*/^'
@@ -40,5 +41,35 @@ def arif(x):
 alg=input("введите пример")
 print(arif(alg))
 
-class Temp:
+def alg(x):
+    first=''
+    second=''
+    sign=''
+    flag=True
+    for i in x:
+        if i.isalnum() and flag==True:
+            first+=i
+        elif i.isalnum() and flag==False:
+            second+=i
+        else:
+            sign+=i
+            flag=False
+    if sign=='+':
+        res=int(first)+int(second)
+        return res
+    elif sign=='-':
+        res=int(first)-int(second)
+        return res
+    elif sign=='*':
+        res=int(first)*int(second)
+        return res
+    elif sign=='/':
+        res=int(first)/int(second)
+        return res
+
+
+example=input('введите пример')
+print(alg(example))
+
+
 
