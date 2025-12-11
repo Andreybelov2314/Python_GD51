@@ -5,3 +5,4 @@ class Temp:
     value2=0
 
     def get_str(self):
+        print(self.value, self.value2)
