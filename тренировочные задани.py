@@ -12,22 +12,33 @@ print('-======-')
 
 
 print('-======-')
-def alg(x,sign,y):
-    if sign=='+':
-        res=int(x)+int(y)
-        return res
-    elif sign=='/':
-        res=int(x)/int(y)
-        return res
-    elif sign=='*':
-        res=int(x)*int(y)
-        return res
-    elif sign=='-':
-        res=int(x)-int(y)
-        return res
-x=input("введите первое число ")
-sign=input("введите знак ")
-y=input("введите второе число")
-print(alg(x, sign, y))
+def arif(x):
+    lst=[]
+    signs='+-*/^'
+    num=''
+    for i in x:
+        if i not in signs:
+            num+=i
+        elif i in signs:
+            lst.append(num)
+            num=i
+    if num not in lst:
+        lst.append(num)
+    result=int(lst[0])
+    for l in lst[1:]:
+        if l[0]=='+':
+            result+=int(l[1:])
+        elif l[0]=='-':
+            result-=int(l[1:])
+        elif l[0]=='*':
+            result*=int(l[1:])
+        elif l[0]=='/':
+            result/=int(l[1:])
+        elif l[0]=='^':
+            result**=int(l[1:])
+    return result
+alg=input("введите пример")
+print(arif(alg))
 
+class Temp:
 
