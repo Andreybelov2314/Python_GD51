@@ -15,7 +15,7 @@ for i in my_list:
 total=total_in-total_ex
 print(f"{total_in}-{total_ex}={total}")
 
-from Temp import Temp
+from ООП.Temp import Temp
 
 
 obj1=Temp()
